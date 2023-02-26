@@ -10,6 +10,14 @@
 
 <body>
   <h1>Hola mundo desde el curso de nodeJS!</h1>
+  <button id="btn">click</button>
 </body>
+
+<script>
+  const btn = document.querySelector('#btn');
+  btn.addEventListener('click', () => {
+    alert('Hello World');
+  });
+</script>
 
 </html>
