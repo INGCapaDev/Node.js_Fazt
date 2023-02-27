@@ -1,12 +1,20 @@
-const mySecretVariable = "anonymous";
+const mySecretVariable = 'anonymous';
 
-const myWebAdress = "faztweb.com";
+const myWebAdress = 'faztweb.com';
 const myNumber = 30;
 const myArray = [10, 20, 30];
 
 const user = {
-  name: "Alvaro",
-  lastname: "Capaceta",
+  name: 'Alvaro',
+  lastname: 'Capaceta',
+};
+
+// Forma mas simple de crear el objeto
+module.exports = {
+  myWebAdress,
+  myNumber,
+  myArray,
+  user,
 };
 
 /* Forma utilizando una constante
@@ -28,17 +36,10 @@ module.exports = {
 };
 */
 
-/* Forma mas simple de crear el objeto
-module.exports = {
-  myWebAdress,
-  myNumber,
-  myArray,
-  user,
-};
-*/
-
 // Otra forma
+/*
 module.exports.user = user;
 module.exports.myArray = myArray;
 module.exports.myWebAdress = myWebAdress;
 module.exports.myNumber = myNumber;
+*/
